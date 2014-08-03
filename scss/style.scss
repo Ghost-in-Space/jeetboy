@@ -1,0 +1,36 @@
+// GLOBAL STYLESHEET
+// This imports all dependencies, mixins, and template partials.
+// It also includes some global styles.
+
+
+
+@import url("http://normalize-css.googlecode.com/svn/trunk/normalize.css");
+@import "../jeet/index";
+@import "compass/css3";
+@import "base/functions"; // I stole Foundation 5's rem-calc functions. Sue me.
+@import "base/colors";
+@import "base/typography";
+@import "base/buttons";
+
+@import "compass/layout/sticky-footer";
+
+@include edit();
+@include sticky-footer(60px);
+
+html, body {
+  @include span(1);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  @include box-sizing(border-box);
+}
+
+// Import Template Styles
+@import "templates/home/layout";
+@import "templates/home/styles";
+
+@import "templates/internal-a/layout";
+@import "templates/internal-a/styles";

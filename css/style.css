@@ -1,0 +1,205 @@
+@import url("http://normalize-css.googlecode.com/svn/trunk/normalize.css");
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+/* line 3, ../scss/base/_typography.scss */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300; }
+
+/* line 105, ../jeet/_grid.scss */
+* {
+  background: rgba(0, 0, 0, 0.05);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000); }
+
+/* line 10, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%; }
+
+/* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -60px; }
+  /* line 18, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+  #root #root_footer {
+    height: 60px; }
+
+/* line 20, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 60px; }
+
+/* line 20, ../scss/style.scss */
+html, body {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+  /* line 195, ../jeet/_grid.scss */
+  html:before, html:after, body:before, body:after {
+    content: '';
+    display: table; }
+  /* line 199, ../jeet/_grid.scss */
+  html:after, body:after {
+    clear: both; }
+
+/* line 27, ../scss/style.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 5, ../scss/templates/home/_layout.scss */
+header {
+  *zoom: 1;
+  width: auto;
+  max-width: 960px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+  /* line 195, ../jeet/_grid.scss */
+  header:before, header:after {
+    content: '';
+    display: table; }
+  /* line 199, ../jeet/_grid.scss */
+  header:after {
+    clear: both; }
+  /* line 8, ../scss/templates/home/_layout.scss */
+  header h2, header h3 {
+    height: 40px; }
+  /* line 12, ../scss/templates/home/_layout.scss */
+  header h2 {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 79.4%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    /* line 195, ../jeet/_grid.scss */
+    header h2:before, header h2:after {
+      content: '';
+      display: table; }
+    /* line 199, ../jeet/_grid.scss */
+    header h2:after {
+      clear: both; }
+    /* line 48, ../jeet/_grid.scss */
+    header h2:last-child {
+      margin-right: 0%; }
+  /* line 15, ../scss/templates/home/_layout.scss */
+  header h3 {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 17.6%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    /* line 195, ../jeet/_grid.scss */
+    header h3:before, header h3:after {
+      content: '';
+      display: table; }
+    /* line 199, ../jeet/_grid.scss */
+    header h3:after {
+      clear: both; }
+    /* line 48, ../jeet/_grid.scss */
+    header h3:last-child {
+      margin-right: 0%; }
+
+/* line 20, ../scss/templates/home/_layout.scss */
+section {
+  background-color: #222;
+  height: 500px; }
+  /* line 24, ../scss/templates/home/_layout.scss */
+  section > div {
+    *zoom: 1;
+    width: auto;
+    max-width: 960px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px; }
+    /* line 195, ../jeet/_grid.scss */
+    section > div:before, section > div:after {
+      content: '';
+      display: table; }
+    /* line 199, ../jeet/_grid.scss */
+    section > div:after {
+      clear: both; }
+  /* line 28, ../scss/templates/home/_layout.scss */
+  section .sidebar {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 22.75%;
+    margin-left: 0%;
+    margin-right: 3%;
+    height: 100%;
+    background-color: red; }
+    /* line 195, ../jeet/_grid.scss */
+    section .sidebar:before, section .sidebar:after {
+      content: '';
+      display: table; }
+    /* line 199, ../jeet/_grid.scss */
+    section .sidebar:after {
+      clear: both; }
+    /* line 48, ../jeet/_grid.scss */
+    section .sidebar:last-child {
+      margin-right: 0%; }
+  /* line 33, ../scss/templates/home/_layout.scss */
+  section .content {
+    height: 100%;
+    background-color: blue;
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 74.25%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    /* line 195, ../jeet/_grid.scss */
+    section .content:before, section .content:after {
+      content: '';
+      display: table; }
+    /* line 199, ../jeet/_grid.scss */
+    section .content:after {
+      clear: both; }
+    /* line 48, ../jeet/_grid.scss */
+    section .content:last-child {
+      margin-right: 0%; }

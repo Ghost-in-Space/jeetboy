@@ -1,0 +1,38 @@
+// Home Page Layout w/ Jeet grid
+//
+
+
+header {
+  @include center(960px, 10px);
+
+  h2, h3 {
+    height: 40px;
+  }
+
+  h2 {
+    @include column(4/5);
+  }
+  h3 {
+    @include column(1/5);
+  }
+}
+
+section {
+  background-color: #222;
+  height: 500px;
+
+  >div {
+    @include center(960px, 10px);
+  }
+
+  .sidebar {
+    @include col(1/4);
+    height: 100%;
+    background-color: red;
+  }
+  .content {
+    height: 100%;
+    background-color: blue;
+    @include col(3/4);
+  }
+}
