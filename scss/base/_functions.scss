@@ -41,9 +41,3 @@ $rem-base: 16px !default;
   }
   @return $remValues;
 }
-
-// Use rem w/ px fallback for IE8
-@mixin rem($value) {
-  font-size: $value + px;
-  font-size: rem-calc($value);
-}

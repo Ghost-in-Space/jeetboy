@@ -12,15 +12,10 @@
   align($direction: both)
   cf()
 */
-/* line 3, ../scss/base/_typography.scss */
+/* line 12, ../scss/base/_typography.scss */
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300; }
-
-/* line 105, ../jeet/_grid.scss */
-* {
-  background: rgba(0, 0, 0, 0.05);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000); }
 
 /* line 10, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
@@ -71,7 +66,7 @@ html, body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 5, ../scss/templates/home/_layout.scss */
+/* line 7, ../scss/templates/home/_layout.scss */
 header {
   *zoom: 1;
   width: auto;
@@ -80,8 +75,8 @@ header {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding-left: 0;
+  padding-right: 0; }
   /* line 195, ../jeet/_grid.scss */
   header:before, header:after {
     content: '';
@@ -89,10 +84,14 @@ header {
   /* line 199, ../jeet/_grid.scss */
   header:after {
     clear: both; }
-  /* line 8, ../scss/templates/home/_layout.scss */
+  /* line 10, ../scss/templates/home/_layout.scss */
+  header h1 {
+    font-size: 40px;
+    font-size: 2.5rem; }
+  /* line 14, ../scss/templates/home/_layout.scss */
   header h2, header h3 {
     height: 40px; }
-  /* line 12, ../scss/templates/home/_layout.scss */
+  /* line 18, ../scss/templates/home/_layout.scss */
   header h2 {
     *zoom: 1;
     float: left;
@@ -113,7 +112,7 @@ header {
     /* line 48, ../jeet/_grid.scss */
     header h2:last-child {
       margin-right: 0%; }
-  /* line 15, ../scss/templates/home/_layout.scss */
+  /* line 21, ../scss/templates/home/_layout.scss */
   header h3 {
     *zoom: 1;
     float: left;
@@ -135,12 +134,13 @@ header {
     header h3:last-child {
       margin-right: 0%; }
 
-/* line 20, ../scss/templates/home/_layout.scss */
+/* line 26, ../scss/templates/home/_layout.scss */
 section {
   background-color: #222;
   height: 500px; }
-  /* line 24, ../scss/templates/home/_layout.scss */
+  /* line 30, ../scss/templates/home/_layout.scss */
   section > div {
+    height: 100%;
     *zoom: 1;
     width: auto;
     max-width: 960px;
@@ -148,8 +148,8 @@ section {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 10px;
-    padding-right: 10px; }
+    padding-left: 0;
+    padding-right: 0; }
     /* line 195, ../jeet/_grid.scss */
     section > div:before, section > div:after {
       content: '';
@@ -157,8 +157,10 @@ section {
     /* line 199, ../jeet/_grid.scss */
     section > div:after {
       clear: both; }
-  /* line 28, ../scss/templates/home/_layout.scss */
+  /* line 35, ../scss/templates/home/_layout.scss */
   section .sidebar {
+    height: 100%;
+    background-color: red;
     *zoom: 1;
     float: left;
     clear: none;
@@ -167,9 +169,7 @@ section {
     padding-right: 0;
     width: 22.75%;
     margin-left: 0%;
-    margin-right: 3%;
-    height: 100%;
-    background-color: red; }
+    margin-right: 3%; }
     /* line 195, ../jeet/_grid.scss */
     section .sidebar:before, section .sidebar:after {
       content: '';
@@ -180,7 +180,7 @@ section {
     /* line 48, ../jeet/_grid.scss */
     section .sidebar:last-child {
       margin-right: 0%; }
-  /* line 33, ../scss/templates/home/_layout.scss */
+  /* line 40, ../scss/templates/home/_layout.scss */
   section .content {
     height: 100%;
     background-color: blue;
@@ -203,3 +203,25 @@ section {
     /* line 48, ../jeet/_grid.scss */
     section .content:last-child {
       margin-right: 0%; }
+
+/* line 47, ../scss/templates/home/_layout.scss */
+footer {
+  background-color: #ddd; }
+  /* line 50, ../scss/templates/home/_layout.scss */
+  footer p {
+    *zoom: 1;
+    width: auto;
+    max-width: 960px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    /* line 195, ../jeet/_grid.scss */
+    footer p:before, footer p:after {
+      content: '';
+      display: table; }
+    /* line 199, ../jeet/_grid.scss */
+    footer p:after {
+      clear: both; }

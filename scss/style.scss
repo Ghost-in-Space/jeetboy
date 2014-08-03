@@ -14,7 +14,7 @@
 
 @import "compass/layout/sticky-footer";
 
-@include edit();
+// @include edit();
 @include sticky-footer(60px);
 
 html, body {

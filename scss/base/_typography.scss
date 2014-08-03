@@ -1,4 +1,13 @@
 // Typography rules, man.
+//
+
+
+
+// Use rem w/ px fallback for IE8
+@mixin rem($value) {
+  font-size: $value + px;
+  font-size: rem-calc($value);
+}
 
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
