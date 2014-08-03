@@ -157,31 +157,8 @@ section {
     /* line 199, ../jeet/_grid.scss */
     section > div:after {
       clear: both; }
-  /* line 35, ../scss/templates/home/_layout.scss */
-  section .sidebar {
-    height: 100%;
-    background-color: red;
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    padding-left: 0;
-    padding-right: 0;
-    width: 22.75%;
-    margin-left: 0%;
-    margin-right: 3%; }
-    /* line 195, ../jeet/_grid.scss */
-    section .sidebar:before, section .sidebar:after {
-      content: '';
-      display: table; }
-    /* line 199, ../jeet/_grid.scss */
-    section .sidebar:after {
-      clear: both; }
-    /* line 48, ../jeet/_grid.scss */
-    section .sidebar:last-child {
-      margin-right: 0%; }
-  /* line 40, ../scss/templates/home/_layout.scss */
-  section .content {
+  /* line 34, ../scss/templates/home/_layout.scss */
+  section article {
     height: 100%;
     background-color: blue;
     *zoom: 1;
@@ -194,20 +171,43 @@ section {
     margin-left: 0%;
     margin-right: 3%; }
     /* line 195, ../jeet/_grid.scss */
-    section .content:before, section .content:after {
+    section article:before, section article:after {
       content: '';
       display: table; }
     /* line 199, ../jeet/_grid.scss */
-    section .content:after {
+    section article:after {
       clear: both; }
     /* line 48, ../jeet/_grid.scss */
-    section .content:last-child {
+    section article:last-child {
+      margin-right: 0%; }
+  /* line 39, ../scss/templates/home/_layout.scss */
+  section aside {
+    height: 100%;
+    background-color: red;
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 22.75%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    /* line 195, ../jeet/_grid.scss */
+    section aside:before, section aside:after {
+      content: '';
+      display: table; }
+    /* line 199, ../jeet/_grid.scss */
+    section aside:after {
+      clear: both; }
+    /* line 48, ../jeet/_grid.scss */
+    section aside:last-child {
       margin-right: 0%; }
 
-/* line 47, ../scss/templates/home/_layout.scss */
+/* line 46, ../scss/templates/home/_layout.scss */
 footer {
   background-color: #ddd; }
-  /* line 50, ../scss/templates/home/_layout.scss */
+  /* line 49, ../scss/templates/home/_layout.scss */
   footer p {
     *zoom: 1;
     width: auto;

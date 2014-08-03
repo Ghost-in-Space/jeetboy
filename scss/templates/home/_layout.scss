@@ -31,16 +31,15 @@ section {
     height: 100%;
     @include center($container);
   }
-
-  .sidebar {
-    height: 100%;
-    background-color: red;
-    @include col(1/4);
-  }
-  .content {
+  article {
     height: 100%;
     background-color: blue;
     @include col(3/4);
+  }
+  aside {
+    height: 100%;
+    background-color: red;
+    @include col(1/4);
   }
 }
 
