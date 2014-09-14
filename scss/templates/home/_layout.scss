@@ -1,18 +1,12 @@
 // Home Page Layout w/ Jeet grid
 //
-
 $container: 960px;
-
 
 header {
   @include center($container);
 
   h1 {
     @include rem(40);
-  }
-
-  h2, h3 {
-    height: 40px;
   }
 
   h2 {
@@ -24,28 +18,19 @@ header {
 }
 
 section {
-  background-color: #222;
-  height: 500px;
 
   >div {
-    height: 100%;
     @include center($container);
   }
   article {
-    height: 100%;
-    background-color: blue;
     @include col(3/4);
   }
   aside {
-    height: 100%;
-    background-color: red;
     @include col(1/4);
   }
 }
 
 footer {
-  background-color: #ddd;
-
   p {
     @include center($container);
   }

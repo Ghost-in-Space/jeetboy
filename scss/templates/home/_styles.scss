@@ -1,3 +1,11 @@
 // Home Page specific styles
 //
+section {
+  height: 500px;
 
+  >div,
+  article,
+  aside {
+    height: 100%;
+  }
+}
