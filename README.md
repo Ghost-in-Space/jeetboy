@@ -8,7 +8,7 @@ Using the Jeet Grid System. Dope, right?
 
 [Jeet](https://github.com/mojotech/jeet)
 
-Slapped together and modified by Tyler Steimle of Kmotion Design, in Grand Rapids, MI.
+Slapped together and modified by Tyler Steimle in Grand Rapids, MI.
 
 
 
