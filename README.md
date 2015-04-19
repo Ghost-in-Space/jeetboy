@@ -18,7 +18,7 @@ In the spirit of the Jeet grid system&mdash;which is awesome because it keeps yo
 
 This project uses Compass. Hence, the config.rb file.
 
-I've used [gitignore.io](http://www.gitignore.io) to generate my own gitignore file based on OS X, Sublime Text, Sass, and Codekit. You may want to generate your own.
+I've used [gitignore.io](http://www.gitignore.io) to generate my own gitignore file based on PhpStorm, OS X, Sublime Text, Sass, and Codekit. You may want to generate your own.
 
 In the `scss/base/_functions.scss` file I've basically ripped off Zurb's Foundation 5 rem-calc function and created an optional mixin in `scss/base/_typography.scss` that outputs a px fallback for older browser support. It looks like this in your wild:
 
